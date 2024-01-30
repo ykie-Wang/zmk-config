@@ -22,7 +22,7 @@
 
             bindings = <
 &kp TAB           &mt NUMBER_1 Q  &mt NUMBER_2 W  &mt NUMBER_3 E    &mt NUMBER_4 R  &mt N5 T     &mt NUMBER_6 Y  &mt N7 U  &mt N8 I   &mt N9 O  &mt N0 P  &kp BSPC
-&kp LEFT_SHIFT    &kp A           &kp S           &kp D             &kp F           &kp G        &kp H           &kp J     &kp K      &kp L     &kp SEMI  &kp SQT
+&kp LEFT_SHIFT    &kp A           &kp S           &kp D             &lt 3 F         &kp G        &kp H           &kp J     &kp K      &kp L     &kp SEMI  &kp SQT
 &kp LEFT_COMMAND  &kp Z           &kp X           &kp C             &kp V           &kp B        &kp N           &kp M     &kp COMMA  &kp DOT   &kp FSLH  &kp ESC
                                                   &kp LEFT_CONTROL  &mo 1           &kp SPACE    &kp RET         &mo 2     &kp RALT
             >;
