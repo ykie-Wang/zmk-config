@@ -14,7 +14,7 @@
         for: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp F &kp O &kp R &kp SPACE &kp LPAR &kp RPAR &kp SPACE &kp RBKT &kp RET &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp RET &kp RBRC>;
+            bindings = <&none &kp F &kp O &kp R &kp SPACE &kp LPAR &kp RPAR &kp SPACE &kp LEFT_BRACE &kp RET &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp RET &kp RBRC>;
             label = "NEW_MACRO";
         };
     };
