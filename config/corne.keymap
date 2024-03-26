@@ -10,6 +10,15 @@
 #include <dt-bindings/zmk/rgb.h>
 
 / {
+    macros {
+        for: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp F &kp O &kp R &kp SPACE &kp LPAR &kp RPAR &kp SPACE &kp RBKT &kp RET &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp RET &kp RBRC>;
+            label = "NEW_MACRO";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -38,7 +47,7 @@
             bindings = <
 &kp TAB           &kp EXCLAMATION  &kp AT_SIGN   &kp HASH          &kp DOLLAR       &kp PERCENT    &kp CARET  &kp AMPERSAND  &kp ASTERISK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BSPC
 &kp LEFT_SHIFT    &kp LEFT         &kp UP_ARROW  &kp DOWN_ARROW    &kp RIGHT_ARROW  &kp GRAVE      &kp MINUS  &kp EQUAL      &kp LEFT_BRACE    &kp RIGHT_BRACE       &kp LESS_THAN          &kp GREATER_THAN
-&kp LEFT_COMMAND  &trans           &trans        &trans            &trans           &trans         &kp UNDER  &kp PLUS       &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp PIPE               &kp TILDE
+&kp LEFT_COMMAND  &trans           &trans        &trans            &for             &trans         &kp UNDER  &kp PLUS       &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp PIPE               &kp TILDE
                                                  &kp LEFT_CONTROL  &trans           &kp SPACE      &kp RET    &trans         &kp RALT
             >;
         };
